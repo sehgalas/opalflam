@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Candle Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Your Candle Store</h1>
+    <nav>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <button id="search-button">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div>
+      <h2>Handmade Candles for Every Occasion</h2>
+      <p>Discover our unique collection of scented candles.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid" id="product-grid">
+      <!-- Product cards will be dynamically added here -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We are passionate about creating high-quality, hand-poured candles that bring warmth and fragrance to your home.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Shopping Cart -->
+  <div class="cart" id="cart">
+    <h3>Shopping Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button id="clear-cart">Clear Cart</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Your Candle Store. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
